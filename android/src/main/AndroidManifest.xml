@@ -2,5 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.zxx.threepower">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
+
+    <application>
+        <meta-data android:name="power_appId" android:value="${power_appId}"/>
+        <meta-data android:name="power_appSecret" android:value="${power_appSecret}"/>
+    </application>
+
 </manifest>
   

@@ -32,5 +32,10 @@ repositories {
 
 dependencies {
     compile 'com.facebook.react:react-native:+'
+    implementation fileTree(include: ['*.aar'], dir: 'libs')
+    compile "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
+    compile 'com.github.bumptech.glide:glide:4.3.0'
+    //微信小程序sdk
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }
   
