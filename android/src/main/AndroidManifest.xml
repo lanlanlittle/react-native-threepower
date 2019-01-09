@@ -11,6 +11,16 @@
     <application>
         <meta-data android:name="power_appId" android:value="${power_appId}"/>
         <meta-data android:name="power_appSecret" android:value="${power_appSecret}"/>
+
+        <provider
+            android:name="com.zxx.threepower.FileProviderPower"
+            android:authorities="${applicationId}.com.zxx.threepower.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/mdtec_file_paths" />
+        </provider>
     </application>
 
 </manifest>

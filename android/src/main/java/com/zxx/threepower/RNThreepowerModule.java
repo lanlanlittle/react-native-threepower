@@ -78,6 +78,7 @@ public class RNThreepowerModule extends ReactContextBaseJavaModule {
     }
 
     if(!AdManager.getInstance(reactContext).isInitialized()){
+      AdManager.getInstance(reactContext).setProviderName(getReactApplicationContext().getPackageName() + ".com.zxx.threepower.fileprovider");
       AdManager.getInstance(reactContext).init(reactContext.getCurrentActivity(), this.power_appId, userid, this.power_appSecret);
     }
     tasks();
